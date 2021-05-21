@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<title>
+Recommendation system
+</title>
+  <style>
+
+#bg{
+    background-size: 1800px 900px;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+}
+a.button2{
+display:inline-block;
+padding:0.5em 3em;
+border:0.16em solid #660066;
+margin:0 100px 0.3em 0;
+
+position:absolute;
+ top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+box-sizing: border-box;
+text-decoration:none;
+text-transform:uppercase;
+font-family:'Roboto',sans-serif;
+font-weight:900;
+color:#660066;
+text-align:center;
+transition: all 0.15s;
+}
+a.button2:hover{
+color:#660066;
+border-color:#660066;
+}
+a.button2:active{
+color:#BBBBBB;
+border-color:#BBBBBB;
+}
+@media all and (max-width:30em){
+a.button2{
+display:block;
+margin:0.4em auto;
+}
+}
+</style>
+</head>
+
+{% load static %}
+<body id="bg" style="background-image: url('{% static "images/brush.jpg"%}')";>
+<!--<button onclick="location.href='{% url 'script' %}'">Execute Script</button> <hr>
+{% if data %}
+{{data | safe}}
+{% endif %}
+<form action="/external/">
+{% csrf_token %}
+Input Text:
+<input type="text" name="param" required><br><br>
+{{data_external}}<br><br>
+{{data1}}
+<br><br>
+<input type="submit" value=" External Python Script">
+</form>-->
+
+<br><br>
+<center><a href="http://127.0.0.1:8050/" class="button2">Recommendation system</a></center>
+<!--<div style="background-image: url('{% static "demo/images/brushwall.png" %}');"></div>-->
+<!--<center><a href=" http://127.0.0.1:8050/"><button  type="button" class="btn btn-success">Recommendation system</button></a>
+</center>-->
+</body>
+</html>
