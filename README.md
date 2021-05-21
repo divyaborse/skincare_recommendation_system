@@ -18,6 +18,8 @@ If user enters product category then user will get all products belonging to tha
 
 ################**How to run**################
 run command :
+cd demoapp
+cd demoapp
 python testfilepython.py
 
 
